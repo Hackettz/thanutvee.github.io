@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำเชิญร่วมงานแต่งงาน | Thanutvee & Kritaya</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F9F7F5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 500px;
+            margin: 2rem;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .radio-group {
+            margin-top: 0.5rem;
+        }
+        
+        .radio-option {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .radio-option input {
+            margin-right: 0.75rem;
+        }
+        
+        button {
+            background-color: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #C19B2E;
+        }
+        
+        .signature {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-top: 2rem;
+            color: #D4AF37;
+            font-size: 1.2rem;
+        }
+        
+        .optional {
+            font-size: 0.8rem;
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>คำเชิญร่วมงานแต่งงาน</h1>
+        <p class="intro">ด้วยความยินดี เราขอเชิญคุณมาร่วมเฉลิมฉลองในวันสำคัญของเรา</p>
+        
+        <form id="weddingForm" action="https://docs.google.com/forms/d/1RkPZFVwzI1EAszzTz6qIOaasUa-rc1VxZb9ojIP8qBY/formResponse" method="GET" target="_blank">
+            <!-- ชื่อ-นามสกุล -->
+            <div class="form-group">
+                <label for="name">ชื่อ-นามสกุล <span class="optional">(จำเป็น)</span></label>
+                <input type="text" id="name" name="entry.2005620554" required>
+            </div>
+            
+            <!-- จำนวนผู้เข้าร่วม -->
+            <div class="form-group">
+                <label>จำนวนผู้เข้าร่วม <span class="optional">(จำเป็น)</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="guest1" name="entry.1045781291" value="1 คน" required>
+                        <label for="guest1">1 คน</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="guest2" name="entry.1045781291" value="2 คน">
+                        <label for="guest2">2 คน</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="guest3" name="entry.1045781291" value="3 คน">
+                        <label for="guest3">3 คน</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="guestOther" name="entry.1045781291" value="อื่นๆ">
+                        <label for="guestOther">อื่นๆ (ระบุ)</label>
+                        <input type="text" id="guestOtherText" name="entry.1045781291.other_option_response" style="width: 50%; margin-left: 10px;" disabled>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ยืนยันการเข้าร่วม -->
+            <div class="form-group">
+                <label>ยืนยันการเข้าร่วม <span class="optional">(จำเป็น)</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="attendYes" name="entry.1065046570" value="ยืนยันเข้าร่วมด้วยความยินดี" required>
+                        <label for="attendYes">ยืนยันเข้าร่วมด้วยความยินดี</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="attendNo" name="entry.1065046570" value="ขอแสดงความยินดีแต่ไม่สามารถเข้าร่วมได้">
+                        <label for="attendNo">ขอแสดงความยินดีแต่ไม่สามารถเข้าร่วมได้</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ข้อความแสดงความยินดี -->
+            <div class="form-group">
+                <label for="message">ข้อความถึงคู่บ่าวสาว <span class="optional">(ไม่จำเป็น)</span></label>
+                <textarea id="message" name="entry.839337160"></textarea>
+            </div>
+            
+            <button type="submit">ส่งคำตอบด้วยความยินดี</button>
+        </form>
+        
+        <p class="signature">Thanutvee & Kritaya</p>
+    </div>
+
+    <script>
+        // Enable/disable other text input based on radio selection
+        document.getElementById('guestOther').addEventListener('change', function() {
+            document.getElementById('guestOtherText').disabled = !this.checked;
+            if (this.checked) {
+                document.getElementById('guestOtherText').focus();
+            }
+        });
+        
+        // Form submission handler
+        document.getElementById('weddingForm').addEventListener('submit', function(e) {
+            // You can add additional validation here if needed
+            console.log('Form submitted');
+        });
+    </script>
+</body>
+</html>
